@@ -25,4 +25,4 @@ This test will just submit all the days of the current month as they are.
 
 ### test_bulk_approve.py
 
-Not fully working yet. The idea is to just approve all the pending items.
+This test will approve all the pending items.
