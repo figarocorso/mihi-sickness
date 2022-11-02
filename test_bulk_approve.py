@@ -12,7 +12,7 @@ def test_bulk_approve(page: Page):
     select_all(page)
     sleep(2)
     approve(page)
-    sleep(2)
+    sleep(4)
 
 
 def go_to_approval(page: Page):
@@ -27,7 +27,7 @@ def select_all(page: Page):
 def approve(page: Page):
     submit = page.locator("//button[@id='BulkActionUpdateByHR']")
     try:
-        expect(submit).to_be_enabled(timeout=2)
+        expect(submit).to_be_enabled()
     except:
         print("Nothing to approve here")
         return
